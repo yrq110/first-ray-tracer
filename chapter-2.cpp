@@ -22,5 +22,5 @@ int main()
             data[index++] = ib;
         }
     }
-    stbi_write_png("test.png", nx, ny, channel_num, data, 0);
+    stbi_write_png("chapter-2.png", nx, ny, channel_num, data, 0);
 }

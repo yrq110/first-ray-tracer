@@ -1,3 +1,4 @@
 # First Ray Tracing
 
-* chapter-1: output an image ([stb_image](https://github.com/nothings/stb/blob/master/stb_image.h))
+* chapter-1: Output an image ([stb_image](https://github.com/nothings/stb/blob/master/stb_image.h))
+* chapter-2: The vec3 class

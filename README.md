@@ -10,3 +10,4 @@
 * chapter-7: Diffuse materials
 * chapter-8: Metal
   * The source book lack descriptions of changed in sphere.h and new random.h file
+* chapter-9: Dielectrics

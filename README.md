@@ -8,3 +8,5 @@
 * chapter-5-2: Multiple objects
 * chapter-6: Anti-aliasing
 * chapter-7: Diffuse materials
+* chapter-8: Metal
+  * The source book lack descriptions of changed in sphere.h and new random.h file

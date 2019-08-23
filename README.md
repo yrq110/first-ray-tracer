@@ -1,4 +1,4 @@
-# First Ray Tracing
+# First Ray Tracer
 
 Ray tracing practice code from [a great tutorial](https://github.com/RayTracing/InOneWeekend) by Peter Shirley. Code is written by C++.
 

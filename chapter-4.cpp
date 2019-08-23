@@ -2,7 +2,8 @@
 #include "lib/stb_image_write.h"
 #include "base/ray.h"
 
-bool hit_sphere(const vec3 &center, float radius, const ray &r) {
+bool hit_sphere(const vec3 &center, float radius, const ray &r)
+{
     vec3 oc = r.origin() - center;
     float a = dot(r.direction(), r.direction());
     float b = 2.0 * dot(oc, r.direction());
@@ -13,7 +14,8 @@ bool hit_sphere(const vec3 &center, float radius, const ray &r) {
 
 vec3 color(const ray &r)
 {
-    if (hit_sphere(vec3(0, 0, -1), 0.5, r)) {
+    if (hit_sphere(vec3(0, 0, -1), 0.5, r))
+    {
         return vec3(1, 0, 0);
     };
     vec3 unit_direction = unit_vector(r.direction());

@@ -7,3 +7,4 @@
 * chapter-5-1: Surface normals
 * chapter-5-2: Multiple objects
 * chapter-6: Anti-aliasing
+* chapter-7: Diffuse materials

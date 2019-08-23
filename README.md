@@ -4,6 +4,6 @@
 * chapter-2: The vec3 class
 * chapter-3: Rays, a simple camera, and background
 * chapter-4: Adding a sphere
-* chapter-5: Surface normals
-* chapter-6: Multiple objects
-* chapter-7: Anti-aliasing
+* chapter-5-1: Surface normals
+* chapter-5-2: Multiple objects
+* chapter-6: Anti-aliasing

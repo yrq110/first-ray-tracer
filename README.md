@@ -4,3 +4,4 @@
 * chapter-2: The vec3 class
 * chapter-3: Rays, a simple camera, and background
 * chapter-4: Adding a sphere
+* chapter-5: Surface normals and multiple objects

@@ -2,6 +2,8 @@
 
 Ray tracing practice code from [a great tutorial](https://github.com/RayTracing/InOneWeekend) by Peter Shirley. Code is written by C++.
 
+![](image/main.png)
+
 * Chapter 1: **Output an image** ([stb_image](https://github.com/nothings/stb/blob/master/stb_image.h))
 * Chapter 2: **The vec3 class**
 * Chapter 3: **Rays, a simple camera, and background**

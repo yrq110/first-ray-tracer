@@ -14,3 +14,4 @@ Ray tracing practice code from [a great tutorial](https://github.com/RayTracing/
   * The source book lacks descriptions of changed in sphere.h and new random.h file
 * Chapter 9: **Dielectrics**
 * Chapter 10: **Positionable camera**
+* Chapter 11: **Defocus blur**

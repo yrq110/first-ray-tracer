@@ -81,8 +81,8 @@ hitable *random_scene() {
 
 
 int main() {
-    int nx = 1200;
-    int ny = 800;
+    int nx = 200;
+    int ny = 100;
     int ns = 10;
     int index = 0;
     int channel_num = 3;
@@ -95,7 +95,7 @@ int main() {
     float dist_to_focus = 10.0;
     float aperture = 0.1;
 
-    camera cam(lookfrom, lookat, vec3(0,1,0), 20, float(nx)/float(ny), aperture, dist_to_focus);
+    camera cam(lookfrom, lookat, vec3(0,1,0), 20, float(nx)/float(ny), aperture, dist_to_focus, 0.0, 1.0);
 
     for (int j = ny-1; j >= 0; j--) {
         for (int i = 0; i < nx; i++) {
@@ -117,5 +117,5 @@ int main() {
             data[index++] = ib;
         }
     }
-    stbi_write_png("main-1.png", nx, ny, channel_num, data, 0);
+    stbi_write_png("chapter-12.png", nx, ny, channel_num, data, 0);
 }

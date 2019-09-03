@@ -40,7 +40,7 @@ class perlin {
             int j = floor(p.y());
             int k = floor(p.z());
             vec3 c[2][2][2];
-            for (int di=0; di < 2; di++)  
+            for (int di=0; di < 2; di++)
                 for (int dj=0; dj < 2; dj++)
                     for (int dk=0; dk < 2; dk++)
                         c[di][dj][dk] = ranvec[perm_x[(i+di) & 255] ^ perm_y[(j+dj) & 255] ^ perm_z[(k+dk) & 255]];

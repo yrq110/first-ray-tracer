@@ -19,6 +19,6 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 * Chapter 10: **Positionable camera**
 * Chapter 11: **Defocus blur**
 
-# [Ray Tracing: The Next Week](https://github.com/RayTracing/TheNextWeek)
+## [Ray Tracing: The Next Week](https://github.com/RayTracing/TheNextWeek)
 
-* Chapter 12: **Motion blur**
+* Chapter 12: **Motion blur** Page 4 code block: `albedo->value`, at this time did not has texture class and this method

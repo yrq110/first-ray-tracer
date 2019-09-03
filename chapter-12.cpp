@@ -56,8 +56,8 @@ hitable *random_scene() {
                     //                         random_double()*random_double()))
                     // );
                     list[i++] = new moving_sphere(
-                        center, center + vec3(0, 0.5*drand48(), 0),
-                        0.0, 1.0,
+                        center, center + vec3(0, 0.5*drand48(), 0), 
+                        0.0, 1.0, 
                         0.2,
                         new lambertian(vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48())));
                 }

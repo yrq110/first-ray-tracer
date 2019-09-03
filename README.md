@@ -22,3 +22,5 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 ## [Ray Tracing: The Next Week](https://github.com/RayTracing/TheNextWeek)
 
 * Chapter 12: **Motion blur** Page 4 code block: `albedo->value`, at this time did not has texture class and this method
+* Chapter 13: **Bounding Volume Hierarchies**
+* Chapter 14: **Solid textures**

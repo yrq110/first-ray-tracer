@@ -17,7 +17,6 @@
 #include "base/material.h"
 #include "base/random.h"
 #include "base/moving_sphere.h"
-#include "base/texture.h"
 
 vec3 color(const ray& r, hitable *world, int depth) {
     hit_record rec;
@@ -42,13 +41,10 @@ vec3 color(const ray& r, hitable *world, int depth) {
 hitable *random_scene() {
     int n = 500;
     hitable **list = new hitable*[n+1];
-    // list[0] =  new sphere(vec3(0,-1000,0), 1000, new lambertian(vec3(0.5, 0.5, 0.5)));
-    texture *checker = new checker_texture( new constant_texture(vec3(0.2,0.3, 0.1)), new constant_texture(vec3(0.9, 0.9, 0.9)));
-    list[0] = new sphere(vec3(0, - 1000, 0), 1000, new lambertian(checker));
+    list[0] =  new sphere(vec3(0,-1000,0), 1000, new lambertian(vec3(0.5, 0.5, 0.5)));
     int i = 1;
     for (int a = -11; a < 11; a++) {
         for (int b = -11; b < 11; b++) {
-            
             float choose_mat = random_double();
             vec3 center(a+0.9*random_double(),0.2,b+0.9*random_double());
             if ((center-vec3(4,0.2,0)).length() > 0.9) {
@@ -63,7 +59,7 @@ hitable *random_scene() {
                         center, center + vec3(0, 0.5*drand48(), 0),
                         0.0, 1.0,
                         0.2,
-                        new lambertian(new constant_texture(vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48()))));
+                        new lambertian(vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48())));
                 }
                 else if (choose_mat < 0.95) { // metal
                     list[i++] = new sphere(
@@ -82,40 +78,36 @@ hitable *random_scene() {
     }
 
     list[i++] = new sphere(vec3(0, 1, 0), 1.0, new dielectric(1.5));
-    list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(new constant_texture(vec3(0.4, 0.2, 0.1))));
+    list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new lambertian(vec3(0.4, 0.2, 0.1)));
     list[i++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
-    // list[i++] = new sphere(vec3(0.3 0.2, .1), 10, even(t0), odd(t1)){}
 
     return new hitable_list(list,i);
 }
 
-// hitable *earth() {
-//     int nx, ny, nn;
-//     //unsigned char *tex_data = stbi_load("tiled.jpg", &nx, &ny, &nn, 0);
-//     unsigned char *tex_data = stbi_load("earthmap.jpg", &nx, &ny, &nn, 0);
-//     material *mat =  new lambertian(new image_texture(tex_data, nx, ny));
-//     return new sphere(vec3(0,0, 0), 2, mat);
-// }
-
-hitable *two_spheres() {
-    texture * checker = new checker_texture( new constant_texture(vec3(0.2,0.3, 0.1)), new constant_texture(vec3(0.9, 0.9, 0.9)));
-    int n = 50;
-    hitable **list = new hitable*[n+1];
-    // list[0] =  new sphere(vec3(0,-10, 0), 10, new lambertian( checker));
-    // list[1] =  new sphere(vec3(0, 10, 0), 10, new lambertian( checker));
-return new hitable_list(list,2);
-}
 
 int main() {
-    int nx = 800;
-    int ny = 400;
+    int nx = 200;
+    int ny = 100;
     int ns = 10;
     int index = 0;
     int channel_num = 3;
     unsigned char data[nx * ny * channel_num];
     // std::cout << "P3\n" << nx << " " << ny << "\n255\n";
     hitable *world = random_scene();
+    
+    class lambertian : public material {
+    public:
+        lambertian(texture *a) : albedo(a) {}
+        virtual bool scatter(const ray& r_in, const hit_record& rec, vec3& attenuation, ray& scattered) const  {
+             vec3 target = rec.p + rec.normal + random_in_unit_sphere();
+             scattered = ray(rec.p, target-rec.p, r_in.time());
+             attenuation = albedo->value(rec.u, rec.v, rec.p);
+             return true;
+        }
 
+        texture *albedo;
+    texture &checkerx= new new checkerTexture(new constantExute(checker_texture* textur(evec0.3.,3.1, vec3(.0, o.0， o.0));
+list[0) = ne sphere(new vec3(0.00.0.3)), 1000, new lambertian(checker), new lambertian(checker);
     vec3 lookfrom(13,2,3);
     vec3 lookat(0,0,0);
     float dist_to_focus = 10.0;
@@ -143,5 +135,5 @@ int main() {
             data[index++] = ib;
         }
     }
-    stbi_write_png("chapter-14.png", nx, ny, channel_num, data, 0);
+    stbi_write_png("chapter-13.png", nx, ny, channel_num, data, 0);
 }

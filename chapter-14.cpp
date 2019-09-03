@@ -107,8 +107,8 @@ return new hitable_list(list,2);
 }
 
 int main() {
-    int nx = 800;
-    int ny = 400;
+    int nx = 200;
+    int ny = 100;
     int ns = 10;
     int index = 0;
     int channel_num = 3;

@@ -29,3 +29,6 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
   * At last calling noise_texture() function should with inputed scale parameter, but the article do not mention it.
 * Chapter 16: **Image texture mapping**
   * Should set attunation with new rec.u and rec.v values in lambertian material scatter function
+* Chapter 17.1: **Rectangles and lights**
+  * Increase Camera `vfov` parameter to see all objects
+

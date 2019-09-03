@@ -101,5 +101,5 @@ int main() {
             data[index++] = ib;
         }
     }
-    stbi_write_png("chapter-17.png", nx, ny, channel_num, data, 0);
+    stbi_write_png("chapter-17-1.png", nx, ny, channel_num, data, 0);
 }

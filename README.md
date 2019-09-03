@@ -31,4 +31,4 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
   * Should set attunation with new rec.u and rec.v values in lambertian material scatter function
 * Chapter 17.1: **Rectangles and lights**
   * Increase Camera `vfov` parameter to see all objects
-
+* Chapter 17.2: **Cornel box: walls**

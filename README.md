@@ -34,3 +34,9 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 * Chapter 17.2: **Cornell box: walls**
 * Chapter 18: **Instances - Cornell box: balls**
 * Chapter 19: **Volumes**
+
+## [Ray Tracing: The Rest of Your Life](https://github.com/RayTracing/TheRestOfYourLife)
+
+* Chapter 20: **A Simple Monte Carlo Program**
+
+

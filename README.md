@@ -32,3 +32,4 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 * Chapter 17.1: **Rectangles and lights**
   * Increase Camera `vfov` parameter to see all objects
 * Chapter 17.2: **Cornell box: walls**
+* Chapter 18: **Instances - Cornell box: balls**

@@ -10,9 +10,7 @@
 //==================================================================================================
 #include <iostream>
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#define STB_IMAGE_IMPLEMENTATION
 #include "lib/stb_image_write.h"
-#include "lib/stb_image.h"
 #include "base/sphere.h"
 #include "base/hitable_list.h"
 #include "base/camera.h"
@@ -43,14 +41,6 @@ vec3 color(const ray& r, hitable *world, int depth) {
         // float t = 0.5*(unit_direction.y() + 1.0);
         // return (1.0-t)*vec3(1.0, 1.0, 1.0) + t*vec3(0.5, 0.7, 1.0);
     }
-}
-
-hitable *two_perlin_spheres() {
-    texture *pertext = new noise_texture(5);
-    hitable **list = new hitable*[2];
-    list[0] = new sphere(vec3(0, -1000, 0), 1000, new lambertian(pertext));
-    list[1] = new sphere(vec3(0, 2, 0), 2, new lambertian(pertext));
-    return new hitable_list(list, 2);
 }
 
 hitable *simple_light() {

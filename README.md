@@ -30,7 +30,7 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 * Chapter 16: **Image texture mapping**
   * Should set attunation with new rec.u and rec.v values in lambertian material scatter function
 * Chapter 17.1: **Rectangles and lights**
-  * Increase Camera `vfov` parameter to see all objects
+  * Remember to increase `vfov` value of `Camera` to see all objects
 * Chapter 17.2: **Cornell box: walls**
 * Chapter 18: **Instances - Cornell box: balls**
 * Chapter 19: **Volumes**
@@ -38,5 +38,6 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 ## [Ray Tracing: The Rest of Your Life](https://github.com/RayTracing/TheRestOfYourLife)
 
 * Chapter 20: **A Simple Monte Carlo Program**
+* Chapter 21: **One Dimensional MC Integration**
 
 

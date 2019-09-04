@@ -14,7 +14,7 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 * Chapter 6: **Anti aliasing**
 * Chapter 7: **Diffuse materials**
 * Chapter 8: **Metal**
-  * The source book lacks descriptions of changed in sphere.h and new random.h file
+  * The article lacks description of changing at sphere.h and new random.h files.
 * Chapter 9: **Dielectrics**
 * Chapter 10: **Positionable camera**
 * Chapter 11: **Defocus blur**
@@ -22,15 +22,15 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 ## [Ray Tracing: The Next Week](https://github.com/RayTracing/TheNextWeek)
 
 * Chapter 12: **Motion blur** 
-  * Page 4 code block: `albedo->value`, at this time did not has texture class and this method
+  * In page 4 code block: `albedo->value`, at this time haven't has the `texture` class yet.
 * Chapter 13: **Bounding Volume Hierarchies**
 * Chapter 14: **Solid textures**
 * Chapter 15: **Perlin noise**
-  * At last calling noise_texture() function should with inputed scale parameter, but the article do not mention it.
+  * While calling noise_texture() function you should input scale parameter, but the article does not mention it.
 * Chapter 16: **Image texture mapping**
-  * Should set attunation with new rec.u and rec.v values in lambertian material scatter function
+  * Should set attunation with new `rec.u` and `rec.v` values in scatter function of lambertian material.
 * Chapter 17.1: **Rectangles and lights**
-  * Remember to increase `vfov` value of `Camera` to see all objects
+  * Remember to increase `vfov` value of `Camera` to see all objects.
 * Chapter 17.2: **Cornell box: walls**
 * Chapter 18: **Instances - Cornell box: balls**
 * Chapter 19: **Volumes**
@@ -39,5 +39,5 @@ Ray tracing practice code from a great series by Peter Shirley. The code is writ
 
 * Chapter 20: **A Simple Monte Carlo Program**
 * Chapter 21: **One Dimensional MC Integration**
-
-
+* Chapter 22: **MC Integration on the Sphere Directions**
+* Chapter 23: **Importance Sampling Materials**
